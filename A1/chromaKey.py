@@ -44,7 +44,7 @@ def task_two(scenic_img, green_img):
 def resize_image(image):
     height, width = image.shape[:2]
     aspect_ratio = float(width/height)
-    new_width = int(1250)    # width 1250 which is within the specification
+    new_width = int(1290)    # width 1290 which is within the specification
     new_height = int(new_width / aspect_ratio)
     resized_image = cv2.resize(image, (new_width, new_height)) # default interpolation cv2.INTER_LINEAR
 
